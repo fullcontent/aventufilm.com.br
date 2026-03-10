@@ -197,16 +197,33 @@ document.addEventListener('DOMContentLoaded', () => {
     modalOverlay.addEventListener('click', closeModal);
 
     // Initial Fetch
+    async function fetchPortfolio() {
+        try {
+            const response = await fetch('portfolio.json');
+            if (response.ok) {
+                portfolioData = await response.json();
+                console.log('Portfolio carregado via fetch.');
+            } else {
+                console.warn('Falha ao carregar portfolio.json. Usando dados estáticos.');
+            }
+        } catch (error) {
+            console.error('Erro ao buscar portfolio.json:', error);
+            console.log('Usando dados estáticos como fallback.');
+        } finally {
+            renderPortfolio();
+        }
+    }
+
     fetchPortfolio();
 
-    // Clients Logos (Placeholder)
+    // Clients Logos
     function setupClients() {
         const track = document.getElementById('clients-track');
         if (!track) return;
 
-        // Example: Add same logos multiple times for marquee effect
+        // Use real logos if they exist, or fallback to the site logo
         const logos = [
-            'assets/img/logo.png', // Using current logo as placeholder
+            'assets/img/logo.png', // Fallback
             'assets/img/logo.png',
             'assets/img/logo.png',
             'assets/img/logo.png',
