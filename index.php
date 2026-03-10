@@ -212,10 +212,19 @@
         </div>
     </div>
 
-    <!-- Inject Portfolio Data via PHP to avoid CORS/Fetch issues -->
+    <!-- Inject Data via PHP to avoid CORS/Fetch issues and automate asset discovery -->
     <?php
+    // Portfolio
     $portfolio_json = file_get_contents('portfolio.json');
-    echo "<script>const PORTFOLIO_DATA = " . ($portfolio_json ?: "[]") . ";</script>";
+    echo "<script>const PORTFOLIO_DATA = " . ($portfolio_json ?: "[]") . ";</script>\n";
+
+    // Hero Images
+    $hero_files = glob("hero_images/*.{jpg,jpeg,png,webp,gif}", GLOB_BRACE);
+    echo "<script>const HERO_IMAGES = " . json_encode($hero_files) . ";</script>\n";
+
+    // Client Logos
+    $client_logos = glob("clients_images/*.{jpg,jpeg,png,webp,svg,gif}", GLOB_BRACE);
+    echo "<script>const CLIENTS_LOGOS = " . json_encode($client_logos) . ";</script>\n";
     ?>
     <script src="main.js"></script>
 </body>

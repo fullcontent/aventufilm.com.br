@@ -61,12 +61,14 @@ document.addEventListener('DOMContentLoaded', () => {
         const container = document.getElementById('hero-slideshow');
         if (!container) return;
 
-        // Use case images as placeholders if hero_images is empty
-        const images = [
-            'portfolio_images/case1.jpg',
-            'portfolio_images/case2.jpg',
-            'assets/img/hero-bg.png'
-        ];
+        // Use injected HERO_IMAGES if not empty, otherwise use fallback
+        let images = (typeof HERO_IMAGES !== 'undefined' && HERO_IMAGES.length > 0)
+            ? HERO_IMAGES
+            : [
+                'portfolio_images/case1.jpg',
+                'portfolio_images/case2.jpg',
+                'assets/img/hero-bg.png'
+            ];
 
         let currentIndex = 0;
         const slides = [];
@@ -214,14 +216,16 @@ document.addEventListener('DOMContentLoaded', () => {
         const track = document.getElementById('clients-track');
         if (!track) return;
 
-        // Use real logos if they exist, or fallback to the site logo
-        const logos = [
-            'assets/img/logo.png', // Fallback
-            'assets/img/logo.png',
-            'assets/img/logo.png',
-            'assets/img/logo.png',
-            'assets/img/logo.png'
-        ];
+        // Use scanned logos from PHP if available
+        const logos = (typeof CLIENTS_LOGOS !== 'undefined' && CLIENTS_LOGOS.length > 0)
+            ? CLIENTS_LOGOS
+            : [
+                'assets/img/logo.png', // Fallback
+                'assets/img/logo.png',
+                'assets/img/logo.png',
+                'assets/img/logo.png',
+                'assets/img/logo.png'
+            ];
 
         // Duplicate for seamless loop
         const allLogos = [...logos, ...logos];
