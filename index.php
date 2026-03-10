@@ -212,7 +212,11 @@
         </div>
     </div>
 
-    <script src="portfolio_data.js"></script>
+    <!-- Inject Portfolio Data via PHP to avoid CORS/Fetch issues -->
+    <?php
+    $portfolio_json = file_get_contents('portfolio.json');
+    echo "<script>const PORTFOLIO_DATA = " . ($portfolio_json ?: "[]") . ";</script>";
+    ?>
     <script src="main.js"></script>
 </body>
 

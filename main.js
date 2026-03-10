@@ -196,25 +196,18 @@ document.addEventListener('DOMContentLoaded', () => {
     modalClose.addEventListener('click', closeModal);
     modalOverlay.addEventListener('click', closeModal);
 
-    // Initial Fetch
-    async function fetchPortfolio() {
-        try {
-            const response = await fetch('portfolio.json');
-            if (response.ok) {
-                portfolioData = await response.json();
-                console.log('Portfolio carregado via fetch.');
-            } else {
-                console.warn('Falha ao carregar portfolio.json. Usando dados estáticos.');
-            }
-        } catch (error) {
-            console.error('Erro ao buscar portfolio.json:', error);
-            console.log('Usando dados estáticos como fallback.');
-        } finally {
+    // Initial Fetch (Now handled by PHP injection)
+    function initPortfolio() {
+        if (portfolioData && portfolioData.length > 0) {
+            renderPortfolio();
+        } else {
+            console.warn('Usando PORTFOLIO_DATA como fallback.');
+            portfolioData = typeof PORTFOLIO_DATA !== 'undefined' ? PORTFOLIO_DATA : [];
             renderPortfolio();
         }
     }
 
-    fetchPortfolio();
+    initPortfolio();
 
     // Clients Logos
     function setupClients() {

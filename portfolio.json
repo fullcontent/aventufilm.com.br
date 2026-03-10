@@ -1,18 +1,7 @@
 [
     {
-        "id": "mirantes",
-        "title": "Turnêxpedição Mirantes do Sul",
-        "category": "Documentários",
-        "description": "A Turnêxpedição Mirantes do Sul é um mergulho profundo nas belezas e desafios de uma das regiões mais exuberantes e inóspitas do sul do Brasil. Documentário que explora a conexão humana com a natureza.",
-        "videoUrl": "https://www.youtube.com/embed/aqz-KE-bpKQ",
-        "thumbnail": "portfolio_images/case1.jpg",
-        "images": [
-            "portfolio_images/case1.jpg"
-        ]
-    },
-    {
         "id": "cosmo",
-        "title": "Os Guardiões do Marumbi",
+        "title": "Cosmo Marumbi",
         "category": "Documentários",
         "description": "O Conjunto Marumbi é uma montanha icônica, considerada o berço do montanhismo no sul do Brasil. Este documentário acompanha a trajetória de Cosmo, um dos grandes guardiões dedicados a proteger e preservar esse ambiente selvagem. O filme é uma verdadeira declaração visual sobre superação, resistência e a majestade do alpinismo, capturando a essência e os perigos da vida outdoor em sua forma mais crua e imersiva.",
         "videoUrl": "https://www.youtube.com/embed/aqz-KE-bpKQ",
@@ -22,6 +11,17 @@
             "https://mir-s3-cdn-cf.behance.net/project_modules/1400/9b275d208065327.66e745f653066.jpg",
             "https://mir-s3-cdn-cf.behance.net/project_modules/1400/22fedf208065327.66e745f651cd3.jpg",
             "https://mir-s3-cdn-cf.behance.net/project_modules/1400/f37be2208065327.66e745f652b31.jpg"
+        ]
+    },
+    {
+        "id": "mirantes",
+        "title": "Turnêxpedição Mirantes do Sul",
+        "category": "Documentários",
+        "description": "A Turnêxpedição Mirantes do Sul é um mergulho profundo nas belezas e desafios de uma das regiões mais exuberantes e inóspitas do sul do Brasil. Documentário que explora a conexão humana com a natureza.",
+        "videoUrl": "https://www.youtube.com/embed/aqz-KE-bpKQ",
+        "thumbnail": "portfolio_images/case1.jpg",
+        "images": [
+            "portfolio_images/case1.jpg"
         ]
     }
 ]
