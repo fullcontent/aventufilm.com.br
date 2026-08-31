@@ -96,8 +96,8 @@
                     </div>
                     <div class="service-card reveal-element delay-1">
                         <h3 class="service-title">Outdoor e Expedições</h3>
-                        <p class="service-desc">Especialistas em ambientes hostis. Produções audiovisuais em montanhas,
-                            trilhas e expedições extremas.</p>
+                        <p class="service-desc">Especialistas em ambientes naturais. Produções audiovisuais em
+                            montanhas, trilhas e expedições.</p>
                     </div>
                     <div class="service-card reveal-element">
                         <h3 class="service-title">Comercial e Corporativo</h3>
