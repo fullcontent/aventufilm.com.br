@@ -4,29 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aventufilm | Produtora Outdoor</title>
 
-    <!-- SEO & Meta Tags -->
+    <!-- SEO -->
+    <title>AventuFilm | Produtora de Vídeo e Documentários Outdoor em Curitiba</title>
     <meta name="description"
-        content="AventuFilm: Produtora audiovisual de outdoor e sobrevivência em Curitiba. Histórias que inspiram, emocionam e conectam. Especialistas em documentários de expedições e montanhismo.">
-    <meta name="keywords"
-        content="produtora de vídeo, produtora audiovisual, documentários, outdoor, sobrevivência, montanhismo, expedição, vídeo para marcas, Curitiba, Aventufilm">
+        content="Produtora audiovisual de Curitiba especializada em documentários, filmes de expedição e vídeos para marcas no universo outdoor, montanhismo e aventura. Direção de Bruno Carvalho.">
+    <link rel="canonical" href="https://aventufilm.com.br/">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="author" content="AventuFilm">
-    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#050505">
 
-    <!-- Open Graph / Social Media -->
+    <!-- Open Graph -->
     <meta property="og:type" content="website">
+    <meta property="og:site_name" content="AventuFilm">
+    <meta property="og:locale" content="pt_BR">
     <meta property="og:url" content="https://aventufilm.com.br/">
-    <meta property="og:title" content="AventuFilm | Produtora Outdoor">
-    <meta property="og:description" content="Histórias que inspiram, emocionam e conectam no universo outdoor.">
-    <!-- Replace with a permanent absolute URL to your logo/cover later if needed -->
-    <meta property="og:image" content="https://aventufilm.com.br/wp-content/uploads/2025/02/LogoBranca@4x.png">
+    <meta property="og:title" content="AventuFilm | Produtora de Vídeo e Documentários Outdoor em Curitiba">
+    <meta property="og:description"
+        content="Documentários, filmes de expedição e vídeos para marcas no universo outdoor. Histórias que inspiram, emocionam e conectam.">
+    <meta property="og:image" content="https://aventufilm.com.br/portfolio_images/cosmo-poster.jpg">
+    <meta property="og:image:width" content="1920">
+    <meta property="og:image:height" content="1080">
+    <meta property="og:image:alt" content="Delírio Tropical — documentário da AventuFilm sobre o COSMO Marumbi">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AventuFilm | Produtora de Vídeo e Documentários Outdoor em Curitiba">
+    <meta name="twitter:description"
+        content="Documentários, filmes de expedição e vídeos para marcas no universo outdoor.">
+    <meta name="twitter:image" content="https://aventufilm.com.br/portfolio_images/cosmo-poster.jpg">
 
     <!-- GEO / Local targeting Curitiba, PR -->
     <meta name="geo.region" content="BR-PR">
     <meta name="geo.placename" content="Curitiba">
     <meta name="geo.position" content="-25.4284;-49.2733">
     <meta name="ICBM" content="-25.4284, -49.2733">
+
+    <!-- Icons -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" href="/favicon-32.png" sizes="32x32">
+    <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DMDJPM29SL"></script>
@@ -37,18 +54,18 @@
 
         gtag('config', 'G-DMDJPM29SL');
     </script>
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Mark Bone uses a sleek geometric sans-serif, let's use Inter or Roboto. Let's stick with Outfit or Inter -->
+    <link rel="preconnect" href="https://i.ytimg.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header class="header" id="header">
         <div class="container header-container">
-            <a href="#" class="logo">
-                <img src="assets/img/logo.png" alt="Aventufilm Logo">
+            <a href="#hero" class="logo" aria-label="AventuFilm — início">
+                <img src="assets/img/logo.png" width="220" height="40" alt="AventuFilm — produtora de vídeo outdoor em Curitiba" fetchpriority="high">
             </a>
             <nav class="nav">
                 <ul class="nav-list">
@@ -57,6 +74,7 @@
                     <li><a href="#atuacoes" class="nav-link">Atuações</a></li>
                     <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
                     <li><a href="#equipe" class="nav-link">Equipe</a></li>
+                    <li><a href="#faq" class="nav-link">FAQ</a></li>
                     <li><a href="#contato" class="nav-link">Contato</a></li>
                 </ul>
             </nav>
@@ -91,6 +109,9 @@
                             <div class="divider" style="margin-left: 0;"></div>
                         </div>
                         <p class="about-text">
+                            A <strong>AventuFilm</strong> é uma produtora audiovisual sediada em <strong>Curitiba (PR)</strong>, especializada em <strong>documentários</strong>, <strong>filmes de expedição</strong> e <strong>vídeos para marcas</strong> no universo outdoor, montanhismo e aventura. Sob direção de Bruno Carvalho, produzimos em todo o Brasil.
+                        </p>
+                        <p class="about-text">
                             Nós nascemos da paixão por transformar desafios em <strong>narrativas autênticas.</strong>
                         </p>
                         <p class="about-text">
@@ -102,7 +123,7 @@
                     </div>
                     <div class="about-media reveal-element delay-1">
                         <div class="about-img-wrapper">
-                            <img src="assets/img/sobre.jpg" alt="AventuFilm - bastidores" class="about-img">
+                            <img src="assets/img/sobre.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Bastidores da AventuFilm: seleção de imagens em mesa de luz" class="about-img">
                         </div>
                     </div>
                 </div>
@@ -180,25 +201,63 @@
 
                 <div class="team-grid">
                     <div class="team-member reveal-element">
-                        <img src="assets/img/team-bruno.jpg" alt="Bruno Carvalho" class="team-img">
+                        <img src="assets/img/team-bruno.jpg" width="600" height="600" loading="lazy" decoding="async" alt="Bruno Carvalho, diretor e filmmaker da AventuFilm" class="team-img">
                         <h4 class="team-name">BRUNO CARVALHO</h4>
                         <p class="team-role">DIRETOR / FILMMAKER</p>
                     </div>
                     <div class="team-member reveal-element delay-1">
-                        <img src="assets/img/team-inrie.jpg" alt="Inriê Maturano" class="team-img">
+                        <img src="assets/img/team-inrie.jpg" width="600" height="600" loading="lazy" decoding="async" alt="Inriê Maturano, filmmaker da AventuFilm" class="team-img">
                         <h4 class="team-name">INRIÊ MATURANO</h4>
                         <p class="team-role">FILMMAKER</p>
                     </div>
                     <div class="team-member reveal-element">
-                        <img src="assets/img/team-gabriel.png" alt="Gabriel Alpendre" class="team-img">
+                        <img src="assets/img/team-gabriel.png" width="600" height="600" loading="lazy" decoding="async" alt="Gabriel Alpendre, filmmaker da AventuFilm" class="team-img">
                         <h4 class="team-name">GABRIEL ALPENDRE</h4>
                         <p class="team-role">FILMMAKER</p>
                     </div>
                     <div class="team-member reveal-element delay-1">
-                        <img src="assets/img/team-brayan.jpg" alt="Brayan Santos" class="team-img">
+                        <img src="assets/img/team-brayan.jpg" width="600" height="600" loading="lazy" decoding="async" alt="Brayan Santos, editor e filmmaker da AventuFilm" class="team-img">
                         <h4 class="team-name">BRAYAN SANTOS</h4>
                         <p class="team-role">EDITOR / FILMMAKER</p>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <?php
+        $faqs = [
+            [
+                'q' => 'O que a AventuFilm produz?',
+                'a' => 'A AventuFilm é uma produtora audiovisual focada em documentários, filmes de expedição, conteúdo outdoor e vídeos institucionais para marcas. Unimos linguagem cinematográfica e vivência real de montanha para contar histórias de superação e conexão com a natureza.',
+            ],
+            [
+                'q' => 'Onde a AventuFilm fica e para onde vocês viajam?',
+                'a' => 'Somos sediados em Curitiba, no Paraná, e realizamos produções e expedições em todo o Brasil, incluindo locações remotas de montanha, trilha e rio.',
+            ],
+            [
+                'q' => 'Quem dirige os projetos da AventuFilm?',
+                'a' => 'A direção é de Bruno Carvalho, filmmaker especializado em narrativas de aventura, montanhismo e esportes de natureza, à frente de uma equipe de filmmakers e editores.',
+            ],
+            [
+                'q' => 'Como solicitar um orçamento de vídeo?',
+                'a' => 'Envie um e-mail para contato@aventufilm.com.br ou uma mensagem pelo WhatsApp (+55 41 3012-5541) com um resumo do projeto, prazos e locação. Retornamos com uma proposta personalizada.',
+            ],
+        ];
+        ?>
+        <section id="faq" class="faq section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title reveal-element">PERGUNTAS FREQUENTES</h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="faq-list">
+                    <?php foreach ($faqs as $f): ?>
+                    <div class="faq-item reveal-element">
+                        <h3 class="faq-q"><?= htmlspecialchars($f['q'], ENT_QUOTES) ?></h3>
+                        <p class="faq-a"><?= htmlspecialchars($f['a'], ENT_QUOTES) ?></p>
+                    </div>
+                    <?php endforeach; ?>
                 </div>
             </div>
         </section>
@@ -208,7 +267,11 @@
             <div class="container">
                 <div class="contact-card reveal-element">
                     <h2 class="contact-title">CONTATO</h2>
-                    <p class="contact-desc">contato@aventufilm.com.br<br>+55 41 3012-5541</p>
+                    <p class="contact-desc">
+                        <a href="mailto:contato@aventufilm.com.br">contato@aventufilm.com.br</a><br>
+                        <a href="tel:+554130125541">+55 41 3012-5541</a><br>
+                        <span>Curitiba, PR — Brasil</span>
+                    </p>
                     <a href="mailto:contato@aventufilm.com.br" class="btn btn-outline">FALE CONOSCO</a>
                 </div>
             </div>
@@ -218,18 +281,19 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-bottom">
-                <img src="assets/img/logo.png" alt="Aventufilm Logo" class="footer-logo">
+                <img src="assets/img/logo.png" width="220" height="40" loading="lazy" decoding="async" alt="AventuFilm" class="footer-logo">
+                <p class="footer-nap">Produtora de vídeo e documentários outdoor · Curitiba, PR — Brasil · <a href="tel:+554130125541">+55 41 3012-5541</a></p>
                 <div class="footer-socials">
-                    <a href="https://www.instagram.com/aventufilm/" target="_blank" aria-label="Instagram" class="social-link">
+                    <a href="https://www.instagram.com/aventufilm/" target="_blank" rel="noopener" aria-label="Instagram" class="social-link">
                         <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
                     </a>
-                    <a href="https://www.youtube.com/channel/UClGp8G7fE0IXa_JgBNXc2Hw" target="_blank" aria-label="YouTube" class="social-link">
+                    <a href="https://www.youtube.com/channel/UClGp8G7fE0IXa_JgBNXc2Hw" target="_blank" rel="noopener" aria-label="YouTube" class="social-link">
                         <svg viewBox="0 0 24 24"><path fill="currentColor" d="M23.498 6.163a3.003 3.003 0 0 0-2.11-2.11C19.518 3.545 12 3.545 12 3.545s-7.518 0-9.388.507a3.003 3.003 0 0 0-2.11 2.11C0 8.033 0 12 0 12s0 3.967.502 5.837a3.003 3.003 0 0 0 2.11 2.11c1.87.507 9.388.507 9.388.507s7.518 0 9.388-.507a3.003 3.003 0 0 0 2.11-2.11C24 15.967 24 12 24 12s0-3.967-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
                     </a>
-                    <a href="https://www.behance.net/brunogc" target="_blank" aria-label="Behance" class="social-link">
+                    <a href="https://www.behance.net/brunogc" target="_blank" rel="noopener" aria-label="Behance" class="social-link">
                         <svg viewBox="0 0 24 24"><path fill="currentColor" d="M22 13h-4c0-.796.345-1.5 1.5-1.5s1.5.704 1.5 1.5zm-14-1.5h-2.5v-2h2.5c.827 0 1.5.449 1.5 1s-.673 1-1.5 1zm.5 4.5h-3v-2.5h3c.827 0 1.5.448 1.5 1s-.673 1.5-1.5 1.5zm15.5-2.5c0-2.481-1.637-4.5-4.5-4.5s-4.5 2.019-4.5 4.5 1.83 4.5 4.5 4.5 4.5-1.892 4.5-4.5zm-1.859 0c0 1.309-.949 2.5-2.641 2.5-1.545 0-2.613-1.07-2.613-2.5s1.176-2.5 2.613-2.5c1.699 0 2.641 1.191 2.641 2.5zm-1.641-5.5h-5v1h5v-1zm-11 1c0-1.378-1.122-2.5-2.5-2.5h-5.5v13h6c1.378 0 2.5-1.122 2.5-2.5 0-1.042-.641-1.926-1.551-2.296.91-.37 1.551-1.254 1.551-2.204z"/></svg>
                     </a>
-                    <a href="https://wa.me/554130125541" target="_blank" aria-label="WhatsApp" class="social-link">
+                    <a href="https://wa.me/554130125541" target="_blank" rel="noopener" aria-label="WhatsApp" class="social-link">
                         <svg viewBox="0 0 24 24"><path fill="currentColor" d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.739-1.456L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.859-4.407 9.862-9.837.001-2.63-1.024-5.101-2.885-6.964-1.862-1.863-4.337-2.887-6.971-2.888-5.442 0-9.866 4.41-9.87 9.839-.001 1.764.475 3.487 1.378 5.02L2.013 21.13l5.06-1.328-.426-.648zm11.317-7.291c-.299-.149-1.769-.873-2.043-.973-.274-.1-.474-.149-.674.15-.2.299-.773.973-.948 1.172-.175.199-.349.224-.648.075-.3-.15-1.266-.466-2.41-1.484-.89-.793-1.49-1.773-1.665-2.072-.175-.299-.019-.461.13-.609.135-.133.3-.349.449-.523.149-.174.199-.299.299-.498.1-.2.05-.373-.025-.523-.075-.15-.674-1.624-.923-2.222-.242-.583-.489-.504-.674-.514-.174-.01-.373-.012-.573-.012-.2 0-.523.075-.797.373-.274.299-1.047 1.022-1.047 2.492 0 1.47 1.071 2.89 1.221 3.089.15.199 2.107 3.218 5.104 4.512.713.308 1.27.492 1.704.63.716.228 1.368.196 1.883.119.574-.085 1.769-.723 2.018-1.42.249-.696.249-1.295.174-1.42-.075-.125-.274-.199-.573-.349z"/></svg>
                     </a>
                 </div>
@@ -277,6 +341,97 @@
     // Client Logos
     $client_logos = glob("clients_images/*.{jpg,jpeg,png,webp,svg,gif}", GLOB_BRACE);
     echo "<script>const CLIENTS_LOGOS = " . json_encode($client_logos) . ";</script>\n";
+
+    /* ---------- Dados estruturados (Schema.org / JSON-LD) ---------- */
+    $SITE = 'https://aventufilm.com.br';
+
+    $works = [];
+    foreach (json_decode($portfolio_json, true) ?: [] as $it) {
+        $img = $it['thumbnail'] ?? '';
+        if ($img && strpos($img, 'http') !== 0) $img = $SITE . '/' . ltrim($img, '/');
+        $url = $it['videoUrl'] ?? '';
+        if (strpos($url, 'youtube.com/embed/') !== false) {
+            $url = 'https://www.youtube.com/watch?v=' . substr(strrchr($url, '/'), 1);
+        } elseif (!empty($it['projectUrl'])) {
+            $url = $it['projectUrl'];
+        } else {
+            $url = null;
+        }
+        $w = [
+            '@type'       => 'CreativeWork',
+            'name'        => $it['title'] ?? '',
+            'genre'       => $it['category'] ?? '',
+            'description' => $it['description'] ?? '',
+            'creator'     => ['@id' => $SITE . '/#organization'],
+            'inLanguage'  => 'pt-BR',
+        ];
+        if ($img) $w['image'] = $img;
+        if ($url) $w['url'] = $url;
+        $works[] = $w;
+    }
+
+    $faq_entities = array_map(function ($f) {
+        return [
+            '@type'          => 'Question',
+            'name'           => $f['q'],
+            'acceptedAnswer' => ['@type' => 'Answer', 'text' => $f['a']],
+        ];
+    }, $faqs);
+
+    $ld = [
+        '@context' => 'https://schema.org',
+        '@graph'   => [
+            [
+                '@type'        => ['ProfessionalService', 'Organization'],
+                '@id'          => $SITE . '/#organization',
+                'name'         => 'AventuFilm',
+                'alternateName' => 'Aventufilm Produtora',
+                'url'          => $SITE . '/',
+                'logo'         => $SITE . '/assets/img/favicon-512.png',
+                'image'        => $SITE . '/portfolio_images/cosmo-poster.jpg',
+                'description'  => 'Produtora audiovisual de Curitiba especializada em documentários, filmes de expedição e vídeos para marcas no universo outdoor, montanhismo e aventura.',
+                'slogan'       => 'Histórias que inspiram, emocionam e conectam.',
+                'email'        => 'contato@aventufilm.com.br',
+                'telephone'    => '+55-41-3012-5541',
+                'priceRange'   => '$$',
+                'address'      => [
+                    '@type'           => 'PostalAddress',
+                    'addressLocality' => 'Curitiba',
+                    'addressRegion'   => 'PR',
+                    'addressCountry'  => 'BR',
+                ],
+                'geo'          => ['@type' => 'GeoCoordinates', 'latitude' => -25.4284, 'longitude' => -49.2733],
+                'areaServed'   => ['@type' => 'Country', 'name' => 'Brasil'],
+                'knowsAbout'   => ['Documentário', 'Produção audiovisual', 'Montanhismo', 'Expedições', 'Vídeo institucional', 'Storytelling', 'Cinema outdoor'],
+                'founder'      => ['@type' => 'Person', 'name' => 'Bruno Carvalho', 'jobTitle' => 'Diretor / Filmmaker'],
+                'sameAs'       => [
+                    'https://www.instagram.com/aventufilm/',
+                    'https://www.youtube.com/channel/UClGp8G7fE0IXa_JgBNXc2Hw',
+                    'https://www.behance.net/brunogc',
+                ],
+            ],
+            [
+                '@type'     => 'WebSite',
+                '@id'       => $SITE . '/#website',
+                'url'       => $SITE . '/',
+                'name'      => 'AventuFilm',
+                'inLanguage' => 'pt-BR',
+                'publisher' => ['@id' => $SITE . '/#organization'],
+            ],
+            [
+                '@type'            => 'ItemList',
+                'name'             => 'Portfólio AventuFilm',
+                'itemListElement'  => array_map(function ($w, $i) {
+                    return ['@type' => 'ListItem', 'position' => $i + 1, 'item' => $w];
+                }, $works, array_keys($works)),
+            ],
+            [
+                '@type'      => 'FAQPage',
+                'mainEntity' => $faq_entities,
+            ],
+        ],
+    ];
+    echo '<script type="application/ld+json">' . json_encode($ld, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) . "</script>\n";
     ?>
     <script src="main.js"></script>
 </body>
