@@ -74,6 +74,7 @@
                     <li><a href="#atuacoes" class="nav-link">Atuações</a></li>
                     <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
                     <li><a href="#equipe" class="nav-link">Equipe</a></li>
+                    <li><a href="#faq" class="nav-link">FAQ</a></li>
                     <li><a href="#contato" class="nav-link">Contato</a></li>
                 </ul>
             </nav>
@@ -223,6 +224,44 @@
             </div>
         </section>
 
+        <!-- FAQ Section -->
+        <?php
+        $faqs = [
+            [
+                'q' => 'O que a AventuFilm produz?',
+                'a' => 'A AventuFilm é uma produtora audiovisual focada em documentários, filmes de expedição, conteúdo outdoor e vídeos institucionais para marcas. Unimos linguagem cinematográfica e vivência real de montanha para contar histórias de superação e conexão com a natureza.',
+            ],
+            [
+                'q' => 'Onde a AventuFilm fica e para onde vocês viajam?',
+                'a' => 'Somos sediados em Curitiba, no Paraná, e realizamos produções e expedições em todo o Brasil, incluindo locações remotas de montanha, trilha e rio.',
+            ],
+            [
+                'q' => 'Quem dirige os projetos da AventuFilm?',
+                'a' => 'A direção é de Bruno Carvalho, filmmaker especializado em narrativas de aventura, montanhismo e esportes de natureza, à frente de uma equipe de filmmakers e editores.',
+            ],
+            [
+                'q' => 'Como solicitar um orçamento de vídeo?',
+                'a' => 'Envie um e-mail para contato@aventufilm.com.br ou uma mensagem pelo WhatsApp (+55 41 3012-5541) com um resumo do projeto, prazos e locação. Retornamos com uma proposta personalizada.',
+            ],
+        ];
+        ?>
+        <section id="faq" class="faq section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title reveal-element">PERGUNTAS FREQUENTES</h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="faq-list">
+                    <?php foreach ($faqs as $f): ?>
+                    <div class="faq-item reveal-element">
+                        <h3 class="faq-q"><?= htmlspecialchars($f['q'], ENT_QUOTES) ?></h3>
+                        <p class="faq-a"><?= htmlspecialchars($f['a'], ENT_QUOTES) ?></p>
+                    </div>
+                    <?php endforeach; ?>
+                </div>
+            </div>
+        </section>
+
         <!-- Contact Section -->
         <section id="contato" class="contact section">
             <div class="container">
@@ -331,6 +370,14 @@
         $works[] = $w;
     }
 
+    $faq_entities = array_map(function ($f) {
+        return [
+            '@type'          => 'Question',
+            'name'           => $f['q'],
+            'acceptedAnswer' => ['@type' => 'Answer', 'text' => $f['a']],
+        ];
+    }, $faqs);
+
     $ld = [
         '@context' => 'https://schema.org',
         '@graph'   => [
@@ -377,6 +424,10 @@
                 'itemListElement'  => array_map(function ($w, $i) {
                     return ['@type' => 'ListItem', 'position' => $i + 1, 'item' => $w];
                 }, $works, array_keys($works)),
+            ],
+            [
+                '@type'      => 'FAQPage',
+                'mainEntity' => $faq_entities,
             ],
         ],
     ];
