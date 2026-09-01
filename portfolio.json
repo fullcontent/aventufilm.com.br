@@ -1,27 +1,110 @@
 [
     {
         "id": "cosmo",
-        "title": "Cosmo Marumbi",
+        "block": "featured",
+        "title": "Delírio Tropical - 30 anos do COSMO no Marumbi",
         "category": "Documentários",
-        "description": "O Conjunto Marumbi é uma montanha icônica, considerada o berço do montanhismo no sul do Brasil. Este documentário acompanha a trajetória de Cosmo, um dos grandes guardiões dedicados a proteger e preservar esse ambiente selvagem. O filme é uma verdadeira declaração visual sobre superação, resistência e a majestade do alpinismo, capturando a essência e os perigos da vida outdoor em sua forma mais crua e imersiva.",
-        "videoUrl": "https://www.youtube.com/embed/aqz-KE-bpKQ",
-        "thumbnail": "portfolio_images/case2.jpg",
+        "description": "\"Delírio Tropical\" celebra os 30 anos do COSMO Marumbi — Corpo de Socorro em Montanha —, uma equipe 100% voluntária que há três décadas protege vidas e trilhas na Serra do Mar, no Paraná. São 44 minutos que reúnem depoimentos, resgates marcantes e bastidores de uma trajetória de coragem, comunidade e respeito à montanha: da fundação amadora sob um abacateiro, em 1996, à maturidade institucional como força auxiliar do Corpo de Bombeiros. Um projeto de memória e impacto — documentário e livro histórico — dirigido por Bruno Carvalho e produzido pela AventuFilm, com lançamento em maio de 2026.",
+        "videoUrl": "https://www.youtube.com/embed/JMpTMyhMa0c",
+        "projectUrl": "https://guardioesdomarumbi.com.br/",
+        "projectLabel": "Conheça o projeto completo",
+        "thumbnail": "portfolio_images/cosmo-poster.jpg",
         "images": [
-            "portfolio_images/case2.jpg",
-            "https://mir-s3-cdn-cf.behance.net/project_modules/1400/9b275d208065327.66e745f653066.jpg",
-            "https://mir-s3-cdn-cf.behance.net/project_modules/1400/22fedf208065327.66e745f651cd3.jpg",
-            "https://mir-s3-cdn-cf.behance.net/project_modules/1400/f37be2208065327.66e745f652b31.jpg"
+            "portfolio_images/cosmo-poster.jpg",
+            "portfolio_images/cosmo-projeto-banner.jpg",
+            "portfolio_images/cosmo-cosmo-equipe.jpg",
+            "portfolio_images/cosmo-timeline-1996.jpg",
+            "portfolio_images/cosmo-timeline-1997.jpg",
+            "portfolio_images/cosmo-timeline-2000.jpg",
+            "portfolio_images/cosmo-timeline-crises.jpg",
+            "portfolio_images/cosmo-timeline-2026.jpg"
+        ]
+    },
+    {
+        "id": "alpen",
+        "block": "grid",
+        "title": "Alpen - Branding Audiovisual",
+        "category": "Comercial e Corporativo",
+        "description": "Vídeo branding para a Alpen: uma jornada de montanha que traduz o posicionamento da marca de vestuário outdoor — desempenho, leveza e conexão com a natureza — em imagem e narrativa.",
+        "videoUrl": "https://www.youtube.com/embed/Se44N1MoGcI",
+        "thumbnail": "portfolio_images/alpen.jpg",
+        "images": [
+            "portfolio_images/alpen.jpg",
+            "portfolio_images/alpen-1.jpg",
+            "portfolio_images/alpen-2.jpg",
+            "portfolio_images/alpen-3.jpg",
+            "portfolio_images/alpen-4.jpg",
+            "portfolio_images/alpen-5.jpg"
+        ]
+    },
+    {
+        "id": "klabin",
+        "block": "grid",
+        "title": "Atitude Klabin - Operação Águas Perigosas",
+        "category": "Comercial e Corporativo",
+        "description": "Filme para o programa Atitude Klabin — Operação Águas Perigosas: uma imersão de rafting e trabalho em equipe que traduz em aventura os valores de segurança, superação e espírito coletivo da marca.",
+        "videoUrl": "https://www.youtube.com/embed/E6E5hMqflFM",
+        "thumbnail": "portfolio_images/klabin.jpg",
+        "images": [
+            "portfolio_images/klabin.jpg",
+            "portfolio_images/klabin-2.jpg",
+            "portfolio_images/klabin-3.jpg"
+        ]
+    },
+    {
+        "id": "unimed",
+        "block": "grid",
+        "title": "Documentário Unimed - Lean Office",
+        "category": "Comercial e Corporativo",
+        "description": "Documentário desenvolvido para a Unimed Curitiba destacando o projeto Lean Office. O filme retrata a transformação organizacional, processos integrados e busca constante por eficiência operacional e qualidade no atendimento.",
+        "videoUrl": "https://www.youtube.com/embed/9ZjRfOWu2ho",
+        "thumbnail": "portfolio_images/unimed.jpg",
+        "images": [
+            "portfolio_images/unimed.jpg",
+            "https://mir-s3-cdn-cf.behance.net/projects/max_808/6e20f7200327825.Y3JvcCwxMDA3LDc4OCwyNzksMA.jpg"
+        ]
+    },
+    {
+        "id": "neodent",
+        "block": "grid",
+        "title": "Doc. Neodent CFS Experience 2024",
+        "category": "Comercial e Corporativo",
+        "description": "Documentário corporativo registrando a experiência e a grandiosidade do evento CFS Experience 2024 da Neodent, líder em implantodontia. Capturando palestras, networking e a inovação tecnológica no setor de odontologia.",
+        "videoUrl": "https://www.youtube.com/embed/1VYCxES4s8c",
+        "thumbnail": "portfolio_images/cfs-experience.jpg",
+        "images": [
+            "portfolio_images/cfs-experience.jpg",
+            "portfolio_images/neodent.jpg"
         ]
     },
     {
         "id": "mirantes",
+        "block": "duo",
         "title": "Turnêxpedição Mirantes do Sul",
         "category": "Documentários",
         "description": "A Turnêxpedição Mirantes do Sul é um mergulho profundo nas belezas e desafios de uma das regiões mais exuberantes e inóspitas do sul do Brasil. Documentário que explora a conexão humana com a natureza.",
-        "videoUrl": "https://www.youtube.com/embed/aqz-KE-bpKQ",
+        "videoUrl": "https://www.youtube.com/embed/KX5d2ncOMLY",
         "thumbnail": "portfolio_images/case1.jpg",
         "images": [
             "portfolio_images/case1.jpg"
+        ]
+    },
+    {
+        "id": "tibagi",
+        "block": "duo",
+        "title": "Desafio Rio Tibagi",
+        "category": "Documentários",
+        "description": "Atravessar o estado do Paraná de bicicleta? Já pensou nisso? Este documentário acompanha a jornada espetacular inspirada no programa Ciclismo Social do Instituto Tibagi, revelando os bastidores e os desafios dessa aventura de Paranaguá até Foz do Iguaçu. Dirigido por Bruno Carvalho.",
+        "videoUrl": "https://www.youtube.com/embed/-oToUVzkJrc",
+        "thumbnail": "portfolio_images/DesafioRioTibagi.jpg",
+        "images": [
+            "portfolio_images/DesafioRioTibagi.jpg",
+            "portfolio_images/tibagi.jpg",
+            "https://mir-s3-cdn-cf.behance.net/project_modules/1400/502c1b69896165.5b90ebe30c800.jpg",
+            "https://mir-s3-cdn-cf.behance.net/project_modules/1400/dead9b69896165.5b90ebe30df4d.jpg",
+            "https://mir-s3-cdn-cf.behance.net/project_modules/1400/88ab1b69896165.5b90ebe30d404.jpg",
+            "https://mir-s3-cdn-cf.behance.net/project_modules/1400/ee52ab69896165.5b90ebe30c211.jpg",
+            "https://mir-s3-cdn-cf.behance.net/project_modules/1400/1c99f669896165.5b90ebe30d9a0.jpg"
         ]
     }
 ]

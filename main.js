@@ -75,9 +75,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Create slides
         images.forEach((src, index) => {
+            const cleanSrc = src.replace(/\\/g, '/');
             const slide = document.createElement('div');
             slide.className = 'hero-slide ken-burns';
-            slide.style.backgroundImage = `url('${src}')`;
+            slide.style.backgroundImage = `url('${cleanSrc}')`;
             if (index === 0) slide.classList.add('active');
             container.appendChild(slide);
             slides.push(slide);
@@ -96,14 +97,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Portfolio Logic
     let portfolioData = typeof PORTFOLIO_DATA !== 'undefined' ? PORTFOLIO_DATA : [];
 
-    function initPortfolio() {
-        if (portfolioData.length > 0) {
-            renderPortfolio(portfolioData);
-        } else {
-            console.error('Dados do portfolio não encontrados.');
-        }
-    }
-
     function createCaseCard(caseItem, isMain = false) {
         const article = document.createElement('article');
         article.className = `case-card reveal-element ${isMain ? '' : 'delay-1'}`;
@@ -111,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         article.innerHTML = `
             <div class="case-img-wrapper">
-                <img src="${caseItem.thumbnail}" alt="${caseItem.title}" class="case-img">
+                <img src="${caseItem.thumbnail}" alt="${caseItem.title}" class="case-img" loading="lazy" onerror="this.style.display='none'">
             </div>
             <div class="case-info">
                 <span class="case-category">${caseItem.category}</span>
@@ -129,16 +122,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function renderPortfolio() {
         const mainCaseContainer = document.getElementById('main-case');
+        const duoContainer = document.getElementById('portfolio-duo');
         const gridContainer = document.getElementById('portfolio-grid');
 
         if (!mainCaseContainer || !gridContainer) return;
 
         mainCaseContainer.innerHTML = '';
+        if (duoContainer) duoContainer.innerHTML = '';
         gridContainer.innerHTML = '';
 
         portfolioData.forEach((item, index) => {
-            if (index === 0) {
+            const block = item.block || (index === 0 ? 'featured' : 'grid');
+            if (block === 'featured') {
                 mainCaseContainer.appendChild(createCaseCard(item, true));
+            } else if (block === 'duo' && duoContainer) {
+                duoContainer.appendChild(createCaseCard(item, false));
             } else {
                 gridContainer.appendChild(createCaseCard(item, false));
             }
@@ -162,25 +160,43 @@ document.addEventListener('DOMContentLoaded', () => {
         modalCategory.textContent = data.category;
         modalDesc.innerHTML = `<p>${data.description}</p>`;
 
+        if (data.projectUrl) {
+            const label = data.projectLabel || 'Ver projeto';
+            modalDesc.innerHTML += `<a href="${data.projectUrl}" target="_blank" rel="noopener" class="btn btn-outline modal-project-link">${label} &nbsp;&rarr;</a>`;
+        }
+
         modalBodyContent.innerHTML = '';
 
-        // YouTube Video
+        // Video Player (YouTube or Local MP4/WebM)
         if (data.videoUrl) {
             const videoWrapper = document.createElement('div');
             videoWrapper.className = 'modal-video-wrapper';
-            videoWrapper.innerHTML = `<iframe width="100%" height="100%" src="${data.videoUrl}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+            
+            const isLocalVideo = data.videoUrl.endsWith('.mp4') || data.videoUrl.endsWith('.webm') || data.videoUrl.startsWith('portfolio_images/') || data.videoUrl.startsWith('assets/');
+            
+            if (isLocalVideo) {
+                videoWrapper.innerHTML = `<video width="100%" height="100%" controls style="display:block; width:100%; background:#000;"><source src="${data.videoUrl}" type="video/mp4">Seu navegador não suporta a reprodução de vídeos.</video>`;
+            } else {
+                videoWrapper.innerHTML = `<iframe width="100%" height="100%" src="${data.videoUrl}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+            }
             modalBodyContent.appendChild(videoWrapper);
         }
 
-        // Images
+        // Galeria: stripe de fotos pequenas abaixo do vídeo
         if (data.images && data.images.length > 0) {
+            const gallery = document.createElement('div');
+            gallery.className = 'modal-gallery';
             data.images.forEach(imgUrl => {
-                const imgElement = document.createElement('img');
-                imgElement.src = imgUrl;
-                imgElement.alt = `${data.title} screenshot`;
-                imgElement.loading = 'lazy';
-                modalBodyContent.appendChild(imgElement);
+                const thumb = document.createElement('img');
+                thumb.src = imgUrl;
+                thumb.alt = `${data.title}`;
+                thumb.loading = 'lazy';
+                thumb.className = 'modal-thumb';
+                thumb.onerror = () => thumb.remove();
+                thumb.addEventListener('click', () => openLightbox(imgUrl));
+                gallery.appendChild(thumb);
             });
+            modalBodyContent.appendChild(gallery);
         }
 
         modal.classList.add('active');
@@ -189,6 +205,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function closeModal() {
         modal.classList.remove('active');
+        if (lightbox) lightbox.classList.remove('active');
         document.body.style.overflow = '';
         setTimeout(() => {
             modalBodyContent.innerHTML = '';
@@ -197,6 +214,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
     modalClose.addEventListener('click', closeModal);
     modalOverlay.addEventListener('click', closeModal);
+
+    // Lightbox para ampliar as fotos da galeria
+    let lightbox = null;
+    function openLightbox(src) {
+        if (!lightbox) {
+            lightbox = document.createElement('div');
+            lightbox.className = 'lightbox';
+            lightbox.innerHTML = '<img alt="">';
+            lightbox.addEventListener('click', () => lightbox.classList.remove('active'));
+            document.body.appendChild(lightbox);
+        }
+        lightbox.querySelector('img').src = src;
+        lightbox.classList.add('active');
+    }
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && lightbox && lightbox.classList.contains('active')) {
+            lightbox.classList.remove('active');
+        }
+    });
 
     // Initial Fetch (Now handled by PHP injection)
     function initPortfolio() {
@@ -232,7 +268,9 @@ document.addEventListener('DOMContentLoaded', () => {
         allLogos.forEach(logo => {
             const img = document.createElement('img');
             img.src = logo;
-            img.alt = 'Logo Cliente';
+            const name = logo.split('/').pop().replace(/\.[^.]+$/, '').replace(/[-_]/g, ' ');
+            img.alt = 'Logo ' + name;
+            img.loading = 'lazy';
             track.appendChild(img);
         });
     }
