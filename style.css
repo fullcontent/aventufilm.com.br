@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 :root {
     --bg-color: #050505;
     --text-primary: #ffffff;
@@ -537,43 +542,15 @@ p {
 
 .contact-desc a {
     color: var(--text-primary);
-    text-decoration: none;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    transition: opacity 0.3s;
 }
 
 .contact-desc a:hover {
-    border-bottom-color: var(--text-primary);
+    opacity: 0.6;
 }
 
 .contact-desc span {
     color: var(--text-secondary);
-}
-
-/* FAQ */
-.faq-list {
-    max-width: 820px;
-    margin: 0 auto;
-}
-
-.faq-item {
-    padding: 1.75rem 0;
-    border-bottom: 1px solid #161616;
-}
-
-.faq-item:first-child {
-    border-top: 1px solid #161616;
-}
-
-.faq-q {
-    font-size: 1.15rem;
-    font-weight: 700;
-    margin-bottom: 0.6rem;
-}
-
-.faq-a {
-    color: var(--text-secondary);
-    line-height: 1.8;
-    font-size: 1rem;
 }
 
 /* Footer */
