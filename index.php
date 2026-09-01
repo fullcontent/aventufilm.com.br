@@ -58,7 +58,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://i.ytimg.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=<?= @filemtime('style.css') ?: '1' ?>">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -382,7 +382,7 @@
     ];
     echo '<script type="application/ld+json">' . json_encode($ld, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) . "</script>\n";
     ?>
-    <script src="main.js?v=<?= @filemtime('main.js') ?: '1' ?>">
+    <script src="main.js"></script>
 </body>
 
 </html>
