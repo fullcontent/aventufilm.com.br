@@ -13,14 +13,23 @@
         content="produtora de vídeo, produtora audiovisual, documentários, outdoor, sobrevivência, montanhismo, expedição, vídeo para marcas, Curitiba, Aventufilm">
     <meta name="author" content="AventuFilm">
     <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://aventufilm.com.br/">
+
+    <!-- Ícones -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" href="/favicon-32.png" sizes="32x32">
+    <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
 
     <!-- Open Graph / Social Media -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://aventufilm.com.br/">
     <meta property="og:title" content="AventuFilm | Produtora Outdoor">
     <meta property="og:description" content="Histórias que inspiram, emocionam e conectam no universo outdoor.">
-    <!-- Replace with a permanent absolute URL to your logo/cover later if needed -->
-    <meta property="og:image" content="https://aventufilm.com.br/wp-content/uploads/2025/02/LogoBranca@4x.png">
+    <meta property="og:image" content="https://aventufilm.com.br/assets/img/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="AventuFilm, produtora audiovisual outdoor">
+    <meta name="twitter:card" content="summary_large_image">
 
     <!-- GEO / Local targeting Curitiba, PR -->
     <meta name="geo.region" content="BR-PR">
@@ -37,7 +46,7 @@
 
         gtag('config', 'G-DMDJPM29SL');
     </script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=2">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Mark Bone uses a sleek geometric sans-serif, let's use Inter or Roboto. Let's stick with Outfit or Inter -->
@@ -60,6 +69,7 @@
                     <li><a href="#contato" class="nav-link">Contato</a></li>
                 </ul>
             </nav>
+            <a href="https://wa.me/554130125541?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20AventuFilm%20e%20gostaria%20de%20pedir%20um%20or%C3%A7amento." target="_blank" rel="noopener" class="btn header-cta" data-local="topo" aria-label="Pedir orçamento pelo WhatsApp"><span class="header-cta-extra">Pedir </span>Orçamento</a>
             <div class="menu-toggle" id="menu-toggle">
                 <span></span>
                 <span></span>
@@ -209,7 +219,10 @@
                 <div class="contact-card reveal-element">
                     <h2 class="contact-title">CONTATO</h2>
                     <p class="contact-desc">contato@aventufilm.com.br<br>+55 41 3012-5541</p>
-                    <a href="mailto:contato@aventufilm.com.br" class="btn btn-outline">FALE CONOSCO</a>
+                    <div class="contact-actions">
+                        <a href="https://wa.me/554130125541?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20AventuFilm%20e%20gostaria%20de%20pedir%20um%20or%C3%A7amento." target="_blank" rel="noopener" class="btn" data-local="contato">PEDIR ORÇAMENTO</a>
+                        <a href="mailto:contato@aventufilm.com.br" class="btn btn-outline" data-local="contato">FALE CONOSCO</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -226,10 +239,7 @@
                     <a href="https://www.youtube.com/channel/UClGp8G7fE0IXa_JgBNXc2Hw" target="_blank" aria-label="YouTube" class="social-link">
                         <svg viewBox="0 0 24 24"><path fill="currentColor" d="M23.498 6.163a3.003 3.003 0 0 0-2.11-2.11C19.518 3.545 12 3.545 12 3.545s-7.518 0-9.388.507a3.003 3.003 0 0 0-2.11 2.11C0 8.033 0 12 0 12s0 3.967.502 5.837a3.003 3.003 0 0 0 2.11 2.11c1.87.507 9.388.507 9.388.507s7.518 0 9.388-.507a3.003 3.003 0 0 0 2.11-2.11C24 15.967 24 12 24 12s0-3.967-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
                     </a>
-                    <a href="https://www.behance.net/brunogc" target="_blank" aria-label="Behance" class="social-link">
-                        <svg viewBox="0 0 24 24"><path fill="currentColor" d="M22 13h-4c0-.796.345-1.5 1.5-1.5s1.5.704 1.5 1.5zm-14-1.5h-2.5v-2h2.5c.827 0 1.5.449 1.5 1s-.673 1-1.5 1zm.5 4.5h-3v-2.5h3c.827 0 1.5.448 1.5 1s-.673 1.5-1.5 1.5zm15.5-2.5c0-2.481-1.637-4.5-4.5-4.5s-4.5 2.019-4.5 4.5 1.83 4.5 4.5 4.5 4.5-1.892 4.5-4.5zm-1.859 0c0 1.309-.949 2.5-2.641 2.5-1.545 0-2.613-1.07-2.613-2.5s1.176-2.5 2.613-2.5c1.699 0 2.641 1.191 2.641 2.5zm-1.641-5.5h-5v1h5v-1zm-11 1c0-1.378-1.122-2.5-2.5-2.5h-5.5v13h6c1.378 0 2.5-1.122 2.5-2.5 0-1.042-.641-1.926-1.551-2.296.91-.37 1.551-1.254 1.551-2.204z"/></svg>
-                    </a>
-                    <a href="https://wa.me/554130125541" target="_blank" aria-label="WhatsApp" class="social-link">
+                    <a href="https://wa.me/554130125541" target="_blank" rel="noopener" aria-label="WhatsApp" class="social-link" data-local="rodape">
                         <svg viewBox="0 0 24 24"><path fill="currentColor" d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.739-1.456L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.859-4.407 9.862-9.837.001-2.63-1.024-5.101-2.885-6.964-1.862-1.863-4.337-2.887-6.971-2.888-5.442 0-9.866 4.41-9.87 9.839-.001 1.764.475 3.487 1.378 5.02L2.013 21.13l5.06-1.328-.426-.648zm11.317-7.291c-.299-.149-1.769-.873-2.043-.973-.274-.1-.474-.149-.674.15-.2.299-.773.973-.948 1.172-.175.199-.349.224-.648.075-.3-.15-1.266-.466-2.41-1.484-.89-.793-1.49-1.773-1.665-2.072-.175-.299-.019-.461.13-.609.135-.133.3-.349.449-.523.149-.174.199-.299.299-.498.1-.2.05-.373-.025-.523-.075-.15-.674-1.624-.923-2.222-.242-.583-.489-.504-.674-.514-.174-.01-.373-.012-.573-.012-.2 0-.523.075-.797.373-.274.299-1.047 1.022-1.047 2.492 0 1.47 1.071 2.89 1.221 3.089.15.199 2.107 3.218 5.104 4.512.713.308 1.27.492 1.704.63.716.228 1.368.196 1.883.119.574-.085 1.769-.723 2.018-1.42.249-.696.249-1.295.174-1.42-.075-.125-.274-.199-.573-.349z"/></svg>
                     </a>
                 </div>
@@ -238,7 +248,7 @@
         </div>
     </footer>
 
-    <!-- Behance-Style Cases Modal -->
+    <!-- Cases Modal -->
     <div id="case-modal" class="modal">
         <div class="modal-overlay"></div>
         <button class="modal-close">&times;</button>
@@ -278,7 +288,7 @@
     $client_logos = glob("clients_images/*.{jpg,jpeg,png,webp,svg,gif}", GLOB_BRACE);
     echo "<script>const CLIENTS_LOGOS = " . json_encode($client_logos) . ";</script>\n";
     ?>
-    <script src="main.js"></script>
+    <script src="main.js?v=2"></script>
 </body>
 
 </html>

@@ -276,4 +276,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     setupClients();
+
+    // Mede no Google Analytics os cliques de contato (WhatsApp e e-mail)
+    document.addEventListener('click', (e) => {
+        const link = e.target.closest('a[href^="https://wa.me/"], a[href^="mailto:"]');
+        if (!link || typeof gtag !== 'function') return;
+        gtag('event', 'clique_contato', {
+            metodo: link.protocol === 'mailto:' ? 'email' : 'whatsapp',
+            local: link.dataset.local || 'outro'
+        });
+    });
 });
