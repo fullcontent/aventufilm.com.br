@@ -46,7 +46,7 @@
 
         gtag('config', 'G-DMDJPM29SL');
     </script>
-    <link rel="stylesheet" href="style.css?v=4">
+    <link rel="stylesheet" href="style.css?v=5">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Mark Bone uses a sleek geometric sans-serif, let's use Inter or Roboto. Let's stick with Outfit or Inter -->

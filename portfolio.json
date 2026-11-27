@@ -78,6 +78,27 @@
         ]
     },
     {
+        "id": "prema",
+        "block": "grid",
+        "title": "Prema Biocosméticos",
+        "category": "Comercial e Corporativo",
+        "description": "Conexão com a natureza é um dos pilares da Prema, e esse foi o conceito deste ensaio em fotos e vídeo. Reunimos quatro pessoas bem distintas fisicamente, representando a diversidade étnica, em um lugar paradisíaco. O resultado são imagens representativas e conceituais, que transmitem conexão e harmonia com a natureza. Fotografia: Bruno Carvalho. Assistente: Ana Helen Baudisch. Modelos: Ana Helen Baudisch, Brian Zago, Aiko e Kamille.",
+        "videoUrl": "portfolio_images/prema-video.mp4",
+        "thumbnail": "portfolio_images/prema-01.jpg",
+        "images": [
+            "portfolio_images/prema-01.jpg",
+            "portfolio_images/prema-02.jpg",
+            "portfolio_images/prema-03.jpg",
+            "portfolio_images/prema-04.jpg",
+            "portfolio_images/prema-05.jpg",
+            "portfolio_images/prema-06.jpg",
+            "portfolio_images/prema-07.jpg",
+            "portfolio_images/prema-08.jpg",
+            "portfolio_images/prema-09.jpg",
+            "portfolio_images/prema-10.jpg"
+        ]
+    },
+    {
         "id": "mirantes",
         "block": "duo",
         "title": "Turnêxpedição Mirantes do Sul",
