@@ -1000,6 +1000,14 @@ p {
     text-align: left;
 }
 
+.portfolio-intro {
+    max-width: 640px;
+    margin: 1.5rem auto 0;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+}
+
 .about-text {
     font-size: 1.1rem;
     line-height: 1.8;

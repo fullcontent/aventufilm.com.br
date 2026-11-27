@@ -46,7 +46,7 @@
 
         gtag('config', 'G-DMDJPM29SL');
     </script>
-    <link rel="stylesheet" href="style.css?v=7">
+    <link rel="stylesheet" href="style.css?v=8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Mark Bone uses a sleek geometric sans-serif, let's use Inter or Roboto. Let's stick with Outfit or Inter -->
@@ -157,6 +157,7 @@
                 <div class="section-header">
                     <h2 class="section-title reveal-element">PORTFOLIO</h2>
                     <div class="divider"></div>
+                    <p class="portfolio-intro reveal-element">Histórias que a gente vive de perto. Ouvimos as pessoas e vamos até onde a história acontece, seja na montanha, no rio ou dentro de uma empresa.</p>
                 </div>
 
                 <div id="portfolio-container" class="portfolio-container">
