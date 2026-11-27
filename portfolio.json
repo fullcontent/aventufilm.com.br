@@ -24,7 +24,7 @@
         "id": "alpen",
         "block": "grid",
         "title": "Alpen - Branding Audiovisual",
-        "category": "Comercial e Corporativo",
+        "category": "Branded Content",
         "description": "Vídeo branding para a Alpen: uma jornada de montanha que traduz o posicionamento da marca de vestuário outdoor — desempenho, leveza e conexão com a natureza — em imagem e narrativa.",
         "videoUrl": "https://www.youtube.com/embed/Se44N1MoGcI",
         "thumbnail": "portfolio_images/alpen.jpg",
@@ -35,6 +35,27 @@
             "portfolio_images/alpen-3.jpg",
             "portfolio_images/alpen-4.jpg",
             "portfolio_images/alpen-5.jpg"
+        ]
+    },
+    {
+        "id": "prema",
+        "block": "grid",
+        "title": "Prema Biocosméticos",
+        "category": "Branded Content",
+        "description": "Conexão com a natureza é um dos pilares da Prema, e esse foi o conceito deste ensaio em fotos e vídeo. Reunimos quatro pessoas bem distintas fisicamente, representando a diversidade étnica, em um lugar paradisíaco. O resultado são imagens representativas e conceituais, que transmitem conexão e harmonia com a natureza. Fotografia: Bruno Carvalho. Assistente: Ana Helen Baudisch. Modelos: Ana Helen Baudisch, Brian Zago, Aiko e Kamille.",
+        "videoUrl": "portfolio_images/prema-video.mp4",
+        "thumbnail": "portfolio_images/prema-01.jpg",
+        "images": [
+            "portfolio_images/prema-01.jpg",
+            "portfolio_images/prema-02.jpg",
+            "portfolio_images/prema-03.jpg",
+            "portfolio_images/prema-04.jpg",
+            "portfolio_images/prema-05.jpg",
+            "portfolio_images/prema-06.jpg",
+            "portfolio_images/prema-07.jpg",
+            "portfolio_images/prema-08.jpg",
+            "portfolio_images/prema-09.jpg",
+            "portfolio_images/prema-10.jpg"
         ]
     },
     {
@@ -75,27 +96,6 @@
         "images": [
             "portfolio_images/cfs-experience.jpg",
             "portfolio_images/neodent.jpg"
-        ]
-    },
-    {
-        "id": "prema",
-        "block": "grid",
-        "title": "Prema Biocosméticos",
-        "category": "Comercial e Corporativo",
-        "description": "Conexão com a natureza é um dos pilares da Prema, e esse foi o conceito deste ensaio em fotos e vídeo. Reunimos quatro pessoas bem distintas fisicamente, representando a diversidade étnica, em um lugar paradisíaco. O resultado são imagens representativas e conceituais, que transmitem conexão e harmonia com a natureza. Fotografia: Bruno Carvalho. Assistente: Ana Helen Baudisch. Modelos: Ana Helen Baudisch, Brian Zago, Aiko e Kamille.",
-        "videoUrl": "portfolio_images/prema-video.mp4",
-        "thumbnail": "portfolio_images/prema-01.jpg",
-        "images": [
-            "portfolio_images/prema-01.jpg",
-            "portfolio_images/prema-02.jpg",
-            "portfolio_images/prema-03.jpg",
-            "portfolio_images/prema-04.jpg",
-            "portfolio_images/prema-05.jpg",
-            "portfolio_images/prema-06.jpg",
-            "portfolio_images/prema-07.jpg",
-            "portfolio_images/prema-08.jpg",
-            "portfolio_images/prema-09.jpg",
-            "portfolio_images/prema-10.jpg"
         ]
     },
     {

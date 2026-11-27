@@ -8,9 +8,9 @@
 
     <!-- SEO & Meta Tags -->
     <meta name="description"
-        content="AventuFilm: Produtora audiovisual de outdoor e sobrevivência em Curitiba. Histórias que inspiram, emocionam e conectam. Especialistas em documentários de expedições e montanhismo.">
+        content="AventuFilm: Produtora audiovisual de outdoor e sobrevivência em Curitiba. Histórias que inspiram, emocionam e conectam. Documentários de expedições e montanhismo e branded content para marcas outdoor.">
     <meta name="keywords"
-        content="produtora de vídeo, produtora audiovisual, documentários, outdoor, sobrevivência, montanhismo, expedição, vídeo para marcas, Curitiba, Aventufilm">
+        content="produtora de vídeo, produtora audiovisual, documentários, branded content, outdoor, sobrevivência, montanhismo, expedição, vídeo para marcas, Curitiba, Aventufilm">
     <meta name="author" content="AventuFilm">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://aventufilm.com.br/">
@@ -46,7 +46,7 @@
 
         gtag('config', 'G-DMDJPM29SL');
     </script>
-    <link rel="stylesheet" href="style.css?v=5">
+    <link rel="stylesheet" href="style.css?v=6">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Mark Bone uses a sleek geometric sans-serif, let's use Inter or Roboto. Let's stick with Outfit or Inter -->
@@ -133,14 +133,19 @@
                             expedições e conexão genuína com a natureza.</p>
                     </div>
                     <div class="service-card reveal-element delay-1">
+                        <h3 class="service-title">Branded Content</h3>
+                        <p class="service-desc">Filmes para marcas que vivem o outdoor. Histórias reais, em ambiente
+                            natural, com a marca como parte da narrativa.</p>
+                    </div>
+                    <div class="service-card reveal-element">
                         <h3 class="service-title">Outdoor e Expedições</h3>
                         <p class="service-desc">Especialistas em ambientes naturais. Produções audiovisuais em
                             montanhas, trilhas e expedições.</p>
                     </div>
-                    <div class="service-card reveal-element">
+                    <div class="service-card reveal-element delay-1">
                         <h3 class="service-title">Comercial e Corporativo</h3>
-                        <p class="service-desc">Elevamos a marca da sua empresa com a estética cinematográfica e o poder
-                            do storytelling outdoor autêntico.</p>
+                        <p class="service-desc">Vídeos institucionais e de projetos e eventos corporativos, com estética
+                            cinematográfica e storytelling autêntico.</p>
                     </div>
                 </div>
             </div>
