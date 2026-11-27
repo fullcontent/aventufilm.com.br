@@ -897,7 +897,8 @@ p {
     background: #000;
 }
 
-.modal-video-wrapper iframe {
+.modal-video-wrapper iframe,
+.modal-video-wrapper video {
     position: absolute;
     top: 0;
     left: 0;
