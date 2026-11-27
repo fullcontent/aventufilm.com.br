@@ -46,7 +46,7 @@
 
         gtag('config', 'G-DMDJPM29SL');
     </script>
-    <link rel="stylesheet" href="style.css?v=2">
+    <link rel="stylesheet" href="style.css?v=4">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Mark Bone uses a sleek geometric sans-serif, let's use Inter or Roboto. Let's stick with Outfit or Inter -->
@@ -66,10 +66,9 @@
                     <li><a href="#atuacoes" class="nav-link">Atuações</a></li>
                     <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
                     <li><a href="#equipe" class="nav-link">Equipe</a></li>
-                    <li><a href="#contato" class="nav-link">Contato</a></li>
                 </ul>
             </nav>
-            <a href="https://wa.me/554130125541?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20AventuFilm%20e%20gostaria%20de%20pedir%20um%20or%C3%A7amento." target="_blank" rel="noopener" class="btn header-cta" data-local="topo" aria-label="Pedir orçamento pelo WhatsApp"><span class="header-cta-extra">Pedir </span>Orçamento</a>
+            <a href="https://wa.me/554130125541?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20AventuFilm%20e%20gostaria%20de%20pedir%20um%20or%C3%A7amento." target="_blank" rel="noopener" class="btn header-cta" data-local="topo" aria-label="Fale conosco pelo WhatsApp">Fale conosco</a>
             <div class="menu-toggle" id="menu-toggle">
                 <span></span>
                 <span></span>
@@ -220,8 +219,7 @@
                     <h2 class="contact-title">CONTATO</h2>
                     <p class="contact-desc">contato@aventufilm.com.br<br>+55 41 3012-5541</p>
                     <div class="contact-actions">
-                        <a href="https://wa.me/554130125541?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20AventuFilm%20e%20gostaria%20de%20pedir%20um%20or%C3%A7amento." target="_blank" rel="noopener" class="btn" data-local="contato">PEDIR ORÇAMENTO</a>
-                        <a href="mailto:contato@aventufilm.com.br" class="btn btn-outline" data-local="contato">FALE CONOSCO</a>
+                        <a href="https://wa.me/554130125541?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20AventuFilm%20e%20gostaria%20de%20pedir%20um%20or%C3%A7amento." target="_blank" rel="noopener" class="btn" data-local="contato">FALE CONOSCO</a>
                     </div>
                 </div>
             </div>

@@ -243,10 +243,6 @@ p {
     white-space: nowrap;
 }
 
-.header-cta-extra {
-    white-space: pre;
-}
-
 .nav {
     margin-left: auto;
 }
@@ -283,10 +279,6 @@ p {
         margin-left: 1.25rem;
         padding: 0.7rem 0.9rem;
         letter-spacing: 1px;
-    }
-
-    .header-cta-extra {
-        display: none;
     }
 }
 
@@ -325,6 +317,23 @@ p {
         font-size: 0.65rem;
         position: relative;
         z-index: 1001;
+    }
+}
+
+@media (max-width: 400px) {
+    .header .container {
+        padding: 0 1rem;
+    }
+
+    .header .logo img {
+        height: 22px;
+    }
+
+    .header-cta {
+        margin-right: 0.75rem;
+        padding: 0.6rem 0.55rem;
+        font-size: 0.6rem;
+        letter-spacing: 0.5px;
     }
 }
 
