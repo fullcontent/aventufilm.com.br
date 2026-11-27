@@ -16,9 +16,9 @@
     <link rel="canonical" href="https://aventufilm.com.br/">
 
     <!-- Ícones -->
-    <link rel="icon" href="/favicon.ico" sizes="any">
-    <link rel="icon" type="image/png" href="/favicon-32.png" sizes="32x32">
-    <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+    <link rel="icon" href="/favicon.ico?v=3" sizes="any">
+    <link rel="icon" type="image/png" href="/favicon-32.png?v=3" sizes="32x32">
+    <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png?v=3">
 
     <!-- Open Graph / Social Media -->
     <meta property="og:type" content="website">
