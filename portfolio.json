@@ -90,12 +90,16 @@
         "block": "grid",
         "title": "Doc. Neodent CFS Experience 2024",
         "category": "Comercial e Corporativo",
-        "description": "Documentário corporativo registrando a experiência e a grandiosidade do evento CFS Experience 2024 da Neodent, líder em implantodontia. Capturando palestras, networking e a inovação tecnológica no setor de odontologia.",
+        "description": "Nem todo dia começa com sol. No CFS Experience 2024, acompanhamos um time da Neodent em um dia de vivência na natureza, em que a chuva virou protagonista. Entre respiração, dinâmicas, trilha com a bandeira da equipe e o desafio de confiar em quem guia, registramos de perto o que une essas pessoas. Um filme sobre confiança, união e um time pronto para o ano seguinte.",
         "videoUrl": "https://www.youtube.com/embed/1VYCxES4s8c",
         "thumbnail": "portfolio_images/cfs-experience.jpg",
         "images": [
             "portfolio_images/cfs-experience.jpg",
-            "portfolio_images/neodent.jpg"
+            "portfolio_images/neodent-1.jpg",
+            "portfolio_images/neodent-2.jpg",
+            "portfolio_images/neodent-3.jpg",
+            "portfolio_images/neodent-4.jpg",
+            "portfolio_images/neodent-5.jpg"
         ]
     },
     {
